@@ -1,0 +1,50 @@
+#------------------
+# Files
+#------------------
+storage*
+SENAMHI*
+senamhi_meteo_dataset
+SENAMHI_dataset_v1.0
+#------------------
+# Shadow files 
+#------------------
+*.fuse_hidden*
+#------------------
+# Compiled sources
+#------------------
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.sh
+
+#------------
+# Packages
+#------------
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.nc
+#-------------------
+# Logs and database
+#-------------------
+*.log
+*.sql
+*.sqlite
+#-------------------
+# OS generated files
+#-------------------
+.Trashes
+ehthumbs.db
+Thumbs.db
+#-------------------
+# GitLab
+#-------------------
+.ipynb_checkpoints
