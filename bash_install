@@ -1,0 +1,31 @@
+#!/bin/bash
+# @Author: Carlos_Enciso_Ojeda <usuario>
+# @Date:   2019-02-13T16:43:37-05:00
+# @Email:  carlos.enciso.o@gmail.com
+# @Last modified by:   carlos
+# @Last modified time: 2019-05-27T14:59:26-05:00
+# @License: MIT License
+# Copyright (c) 2019 National Agrarian University La Molina
+conda update --all
+conda config --add channels conda-forge
+conda install -c conda-forge xarray dask dask-jobqueue jupyter jupyterlab cmocean scipy bottleneck cyordereddict cartopy nodejs gsw pylint ipywidgets graphviz -y
+conda install -c conda-forge pytables tabulate cartopy geopandas rasterio affine eofs shapely scipy seaborn geoplot beautifulsoup4 selenium html5lib scikit-learn -y
+conda install -c conda-forge nodejs -y
+#conda install -c conda-forge xlrd xlwt -y
+conda install -c pyviz/label/dev pyviz -y
+conda install -c pyviz hvplot holoviews bokeh geoviews panel -y
+conda install -c ioos mplleaflet
+# Installing jupyter-lab extensions
+jupyter labextension install @pyviz/jupyterlab_pyviz
+jupyter labextension install dask-labextension
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install @mflevine/jupyterlab_html
+jupyter labextension install jupyterlab-drawio
+conda install -c conda-forge widgetsnbextension -y
+# Latex
+conda install -c conda-forge jupyter_latex_envs
+jupyter labextension install @jupyterlab/latex
+# Instaling groundwater flow models
+conda install -c conda-forge flopy -y
+# Installing kernell
+python -m ipykernel install --user --name py37 --display-name py37
